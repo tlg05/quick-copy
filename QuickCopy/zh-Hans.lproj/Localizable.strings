@@ -1,0 +1,17 @@
+/* 
+  strings.strings
+  QuickCopy
+
+  Created by 特力更 on 2018/8/30.
+  Copyright © 2018 Ligeng. All rights reserved.
+*/
+
+"Show QuickCopy" = "显示剪贴板助手";
+"Quit" = "退出";
+"Are you sure you want to delete this item?" = "确定要删除这一项吗？";
+"You can't undo this operation" = "该操作无法撤销";
+"OK" = "确定";
+"Cancel" = "取消";
+"Preferences..." = "选项...";
+"About..." = "关于...";
+"Quit..." = "退出...";

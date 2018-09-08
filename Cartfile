@@ -1,0 +1,3 @@
+github "soffes/HotKey"
+github "stephencelis/SQLite.swift" ~> 0.11.5
+github "shpakovski/MASShortcut"
