@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         mainWindow = NSApplication.shared.windows.last!
         mainWindow?.delegate = self
         mainWindow!.close()
-        
+    
         if !UserDefaults.standard.bool(forKey: "initiated") {
             if NSLocale.current.identifier == "zh-Hans" && Locale.preferredLanguages[0] != "zh-Hans" {
                 UserDefaults.standard.set(["zh-Hans"], forKey: "AppleLanguages")
@@ -31,9 +31,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
                 UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
                 UserDefaults.standard.synchronize()
             }
-            
-            let launcherAppId = "com.ligeng.QuickCopyLauncher"
-            SMLoginItemSetEnabled(launcherAppId as CFString, true)
             
             UserDefaults.standard.set(true, forKey: "initiated")
         }
