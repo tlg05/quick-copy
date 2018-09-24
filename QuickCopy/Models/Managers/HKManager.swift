@@ -8,8 +8,8 @@
 
 import Foundation
 
-class HKSet {
-    static let shared = HKSet()
+class HKManager {
+    static let shared = HKManager()
     
     public var shortcuts: [HK] = []
     
@@ -18,6 +18,6 @@ class HKSet {
     }
     
     private init() {
-        
+        self.resync()
     }
 }

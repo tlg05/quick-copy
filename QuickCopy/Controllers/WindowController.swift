@@ -32,10 +32,10 @@ class WindowController: BaseWindowController {
         let horizontal_gap = CGFloat(5.0)
         
         for i in 0...9 {
-            if (i >= HKSet.shared.shortcuts.count) {
+            if (i >= HKManager.shared.shortcuts.count) {
                 break;
             }
-            let hk = HKSet.shared.shortcuts[i]
+            let hk = HKManager.shared.shortcuts[i]
             let button = NSButton(title: hk.break_text(), target: self, action: #selector(onClickTouchbarButton))
             button.tag = i
             
@@ -54,7 +54,7 @@ class WindowController: BaseWindowController {
     }
     
     @objc func onClickTouchbarButton(sender: NSButton) {
-        HKSet.shared.shortcuts[sender.tag].copyText()
+        TextUtil.copy(text: HKManager.shared.shortcuts[sender.tag].text)
         
         self.window?.close()
     }

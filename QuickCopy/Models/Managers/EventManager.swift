@@ -13,7 +13,7 @@ class EventManager {
     public var eventArr: [EventObj] = []
     
     private init() {
-        
+
     }
     
     public func listen(to: String!, action: ((Any?) -> ())!) {

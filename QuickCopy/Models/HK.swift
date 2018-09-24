@@ -10,7 +10,7 @@ import Foundation
 import SQLite
 import HotKey
 
-class HK {
+class HK: Model {
     
     var id:Int64?
     var text:String! = ""
@@ -18,45 +18,34 @@ class HK {
     var note: String?
     var visible = true
     
+    static let table_name = "hks"
     static let id_col = Expression<Int64>("id")
     static let text_col = Expression<String>("text")
     static let visible_col = Expression<Bool>("visible")
     static let note_col = Expression<String?>("note")
     static let keys_col = Expression<String>("keys")
-    
+
     var hotkey: HotKey? = nil
     
-    init() {
-        
+    required override init() {
+        super.init()
     }
     
     init(id: Int64, text: String!, shortcut: String!, note: String?, visible: Bool) {
+        super.init()
+        
         self.id = id
         self.text = text
         self.shortcut = shortcut
         self.note = note
         self.visible = visible
         
-        setHotKey()
-    }
-    
-    static private func openDB() -> Connection {
-        let path = NSSearchPathForDirectoriesInDomains(
-            .applicationSupportDirectory, .userDomainMask, true
-            ).first! + "/" + Bundle.main.bundleIdentifier!
-        
-        // create parent directory iff it doesn’t exist
-        try! FileManager.default.createDirectory(
-            atPath: path, withIntermediateDirectories: true, attributes: nil
-        )
-        
-        let db = try! Connection("\(path)/db.sqlite3")
-        return db
+        self.setHotKey()
     }
     
     static public func select_all() -> [HK] {
         let db = openDB()
-        let hks = Table("hks")
+        let hks = Table(HK.table_name)
         var result: [HK] = []
         
         do {
@@ -77,7 +66,7 @@ class HK {
     
     static func setup() {
         let db = openDB()
-        let hks = Table("hks")
+        let hks = Table(HK.table_name)
         
         try! db.run(hks.create(ifNotExists: true) { t in
             t.column(id_col, primaryKey: .autoincrement)
@@ -92,16 +81,7 @@ class HK {
         if !self.visible {
             return String(repeating: "*", count: self.text.count > at ? at : self.text.count)
         }
-        var result: String! = self.text
-        if result.count > at {
-            result = String(text[...text.index(text.startIndex, offsetBy: at - 1)])
-            if let wrap_idx = result.index(of: "\n") {
-                result = String(result[..<wrap_idx]) + "..."
-            } else {
-                result = result + "..."
-            }
-        }
-        return result
+        return TextUtil.wrap(text: self.text, at: at)
     }
     
     public func setVisible(newValue: Bool) {
@@ -110,7 +90,7 @@ class HK {
         }
         
         let db = HK.openDB()
-        let row = Table("hks").filter(HK.id_col == self.id!)
+        let row = Table(HK.table_name).filter(HK.id_col == self.id!)
         do {
             if try db.run(row.update(HK.visible_col <- newValue)) > 0 {
                 self.visible = newValue
@@ -128,7 +108,7 @@ class HK {
         }
         
         let db = HK.openDB()
-        let row = Table("hks").filter(HK.id_col == self.id!)
+        let row = Table(HK.table_name).filter(HK.id_col == self.id!)
         do {
             if try db.run(row.delete()) <= 0 {
                 print("Failed in updating visible field")
@@ -147,18 +127,13 @@ class HK {
         let shortcut = MASShortcut(keyCode: UInt(keycodes[0])!, modifierFlags: UInt(keycodes[1])!)
         hotkey = HotKey(carbonKeyCode: (shortcut?.carbonKeyCode)!, carbonModifiers: (shortcut?.carbonFlags)!)
         hotkey?.keyDownHandler = {
-            self.copyText()
+            TextUtil.copy(text: self.text)
         }
-    }
-    
-    public func copyText() {
-        NSPasteboard.general.clearContents()
-        NSPasteboard.general.setString(self.text, forType: NSPasteboard.PasteboardType.string)
     }
     
     public func save() {
         let db = HK.openDB()
-        let hks = Table("hks")
+        let hks = Table(HK.table_name)
         
         if self.id != nil {
             do {

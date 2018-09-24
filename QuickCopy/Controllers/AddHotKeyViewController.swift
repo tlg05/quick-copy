@@ -17,6 +17,7 @@ class AddHotKeyViewController: NSViewController, NSTextViewDelegate {
     @IBOutlet weak var shortcutView: MASShortcutView!
     
     public var data: HK? = nil
+    public var prefillText: NSString?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,9 @@ class AddHotKeyViewController: NSViewController, NSTextViewDelegate {
         
         shortcutView.shortcutValueChange = { (sender) in
             self.saveButton.isEnabled = self.validate()
+        }
+        if (prefillText != nil) {
+            textTextView.string = prefillText! as String
         }
         
         initData()
@@ -66,8 +70,7 @@ class AddHotKeyViewController: NSViewController, NSTextViewDelegate {
         hk.shortcut = String(shortcutView.shortcutValue.keyCode) + "," + String(shortcutView.shortcutValue.modifierFlags)
         hk.save();
         
-        let viewController = presenting as! ViewController
-        viewController.reloadData()
+        EventManager.shared.trigger(name: "app.shortcuts_updated")
         
         dismiss(self)
     }

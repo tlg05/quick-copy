@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class RoundedCornerView: NSView {
+class RoundedCornerView: CustomView {
     
     private func drawMaskedCorners(cornerRadius: CGFloat) {
         let mask_layer = CAShapeLayer()
@@ -38,8 +38,5 @@ class RoundedCornerView: NSView {
             // Fallback on earlier versions
             drawMaskedCorners(cornerRadius: radius)
         }
- 
-        NSColor.windowBackgroundColor.set()
-        dirtyRect.fill()
     }
 }

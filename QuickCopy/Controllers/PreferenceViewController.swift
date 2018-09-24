@@ -14,6 +14,8 @@ class PreferenceViewController: NSViewController {
     @IBOutlet weak var autoStartCheckBox: NSButton!
     @IBOutlet weak var appShortcut: MASShortcutView!
     @IBOutlet weak var languageButton: NSPopUpButton!
+    @IBOutlet weak var languageHint: NSTextField!
+    
     let launcherAppId = "com.ligeng.QuickCopyLauncher"
     private let global_shortcut_key = "app_shortcut_tmp"
     
@@ -77,9 +79,7 @@ class PreferenceViewController: NSViewController {
             UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
             UserDefaults.standard.synchronize()
         }
-        if changed {
-            self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "languageChangeSegue"), sender: self)
-        }
+        self.languageHint.isHidden = !changed
     }
     
 }

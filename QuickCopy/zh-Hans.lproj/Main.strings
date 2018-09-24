@@ -5,8 +5,20 @@
 /* Class = "NSMenuItem"; title = "QuickCopy"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "拷贝助手";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Show/Hide"; ObjectID = "1ez-ep-JhE"; */
+"1ez-ep-JhE.ibShadowedToolTip" = "Show/Hide";
+
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "2rB-Um-Vwc"; */
 "2rB-Um-Vwc.title" = "拷贝";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "3nF-Ak-bIB"; */
+"3nF-Ak-bIB.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4M8-SS-xaw"; */
+"4M8-SS-xaw.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "text"; ObjectID = "4bz-Iq-IxS"; */
+"4bz-Iq-IxS.title" = "text";
 
 /* Class = "NSTextFieldCell"; title = "teligeng123@163.com"; ObjectID = "4pu-aF-s7x"; */
 "4pu-aF-s7x.title" = "teligeng123@163.com";
@@ -29,17 +41,20 @@
 /* Class = "NSMenuItem"; title = "Find"; ObjectID = "6V7-PD-j2v"; */
 "6V7-PD-j2v.title" = "Find";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Delete"; ObjectID = "7mF-dr-m9p"; */
+"7mF-dr-m9p.ibShadowedToolTip" = "Delete";
+
 /* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "7qb-pv-vOQ"; */
 "7qb-pv-vOQ.title" = "Smart Copy/Paste";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "8o3-XP-JCI"; */
+"8o3-XP-JCI.title" = "关闭";
 
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "93N-2w-UQB"; */
 "93N-2w-UQB.title" = "Edit";
 
 /* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "9MN-iQ-Avs"; */
 "9MN-iQ-Avs.title" = "Show Spelling and Grammar";
-
-/* Class = "NSTableColumn"; headerCell.title = "Shortcut"; ObjectID = "9bL-6S-Nss"; */
-"9bL-6S-Nss.headerCell.title" = "快捷键";
 
 /* Class = "NSMenuItem"; title = "Find…"; ObjectID = "9g5-as-ovR"; */
 "9g5-as-ovR.title" = "Find…";
@@ -49,9 +64,6 @@
 
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "主菜单";
-
-/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "B6L-vH-Jpa"; */
-"B6L-vH-Jpa.title" = "文本";
 
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "选项…";
@@ -65,14 +77,14 @@
 /* Class = "NSMenuItem"; title = "QuickCopy Help"; ObjectID = "FKE-Sm-Kum"; */
 "FKE-Sm-Kum.title" = "拷贝助手帮助";
 
-/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "FVB-Hc-3m3"; */
-"FVB-Hc-3m3.title" = "文本";
-
 /* Class = "NSMenuItem"; title = "Find and Replace…"; ObjectID = "FVY-Qd-N2M"; */
 "FVY-Qd-N2M.title" = "Find and Replace…";
 
 /* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "HGo-v7-SBB"; */
 "HGo-v7-SBB.title" = "Check Document Now";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Edit"; ObjectID = "HPJ-91-xr7"; */
+"HPJ-91-xr7.ibShadowedToolTip" = "Edit";
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "Hby-kr-TcC"; */
 "Hby-kr-TcC.title" = "Speech";
@@ -86,20 +98,17 @@
 /* Class = "NSWindow"; title = "Quick Copy"; ObjectID = "IQv-IB-iLA"; */
 "IQv-IB-iLA.title" = "拷贝助手";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Delete"; ObjectID = "IYN-vq-XKy"; */
-"IYN-vq-XKy.ibShadowedToolTip" = "删除";
-
 /* Class = "NSTextFieldCell"; title = "Icons from icons8.com"; ObjectID = "IYX-s1-Z8X"; */
 "IYX-s1-Z8X.title" = "来自icons8.com的图标";
-
-/* Class = "NSTextFieldCell"; title = "Copied!"; ObjectID = "JJG-ZU-uac"; */
-"JJG-ZU-uac.title" = "已拷贝!";
 
 /* Class = "NSMenuItem"; title = "Select All"; ObjectID = "KRb-Mz-c8e"; */
 "KRb-Mz-c8e.title" = "Select All";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "显示全部";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Copy"; ObjectID = "LXQ-bx-Ydn"; */
+"LXQ-bx-Ydn.ibShadowedToolTip" = "Copy";
 
 /* Class = "NSMenuItem"; title = "简体中文"; ObjectID = "MOW-md-cND"; */
 "MOW-md-cND.title" = "简体中文";
@@ -116,6 +125,9 @@
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "NZr-81-58T"; */
 "NZr-81-58T.title" = "Spelling";
 
+/* Class = "NSTableColumn"; headerCell.title = "Text to be copied into Clipboard"; ObjectID = "ORl-jU-2Ka"; */
+"ORl-jU-2Ka.headerCell.title" = "Text to be copied into Clipboard";
+
 /* Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "Obe-Ox-YEm"; */
 "Obe-Ox-YEm.title" = "Smart Links";
 
@@ -125,17 +137,20 @@
 /* Class = "NSMenuItem"; title = "Hide QuickCopy"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "隐藏拷贝助手";
 
-/* Class = "NSButtonCell"; title = "Add"; ObjectID = "P9C-3u-V9J"; */
-"P9C-3u-V9J.title" = "添加";
-
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "Pb1-WD-Fmu"; */
 "Pb1-WD-Fmu.title" = "Transformations";
 
-/* Class = "NSViewController"; title = "关于"; ObjectID = "PiY-X1-TkF"; */
+/* Class = "NSViewController"; title = "About"; ObjectID = "PiY-X1-TkF"; */
 "PiY-X1-TkF.title" = "关于";
+
+/* Class = "NSButtonCell"; title = "HISTORY"; ObjectID = "PjR-PS-hSf"; */
+"PjR-PS-hSf.title" = "拷贝历史";
 
 /* Class = "NSMenuItem"; title = "Make Lower Case"; ObjectID = "QDd-RE-rg5"; */
 "QDd-RE-rg5.title" = "Make Lower Case";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add"; ObjectID = "QfA-b7-XJK"; */
+"QfA-b7-XJK.ibShadowedToolTip" = "添加";
 
 /* Class = "NSTextFieldCell"; title = "New text to be copied"; ObjectID = "RGd-iI-pob"; */
 "RGd-iI-pob.title" = "待拷贝的文本";
@@ -147,10 +162,10 @@
 "SA8-aL-gyl.title" = "欢迎发送邮件交流问题或者想法😄";
 
 /* Class = "NSTextFieldCell"; title = "version: "; ObjectID = "U65-4E-CZU"; */
-"U65-4E-CZU.title" = "version: ";
+"U65-4E-CZU.title" = "版本: ";
 
-/* Class = "NSTableColumn"; headerCell.title = "Action"; ObjectID = "Upc-GO-abu"; */
-"Upc-GO-abu.headerCell.title" = "操作";
+/* Class = "NSButtonCell"; title = "SHORTCUTS"; ObjectID = "Uav-3E-OWi"; */
+"Uav-3E-OWi.title" = "快捷键";
 
 /* Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "V1u-oT-eUf"; */
 "V1u-oT-eUf.title" = "Jump to Selection";
@@ -182,14 +197,14 @@
 /* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "b5W-kE-dad"; */
 "b5W-kE-dad.title" = "Find Next";
 
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "bHV-TG-TZF"; */
+"bHV-TG-TZF.title" = "Label";
+
 /* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "bd7-ie-hAj"; */
 "bd7-ie-hAj.title" = "Start Speaking";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "bpR-ed-WzD"; */
 "bpR-ed-WzD.title" = "Paste";
-
-/* Class = "NSButton"; ibShadowedToolTip = "Edit"; ObjectID = "cCg-tm-r5K"; */
-"cCg-tm-r5K.ibShadowedToolTip" = "编辑";
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "d15-hp-CWi"; */
 "d15-hp-CWi.title" = "Show Substitutions";
@@ -197,20 +212,14 @@
 /* Class = "NSMenu"; title = "Edit"; ObjectID = "db5-rD-4Qj"; */
 "db5-rD-4Qj.title" = "Edit";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ehP-OO-IjM"; */
-"ehP-OO-IjM.title" = "Text Cell";
-
-/* Class = "NSButton"; ibShadowedToolTip = "Show/Hide"; ObjectID = "fFy-Wc-uFz"; */
-"fFy-Wc-uFz.ibShadowedToolTip" = "显示/隐藏";
-
 /* Class = "NSTextFieldCell"; title = "1.0.0"; ObjectID = "fVv-Lf-0zL"; */
 "fVv-Lf-0zL.title" = "1.0.0";
 
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "fXD-Mr-za4"; */
 "fXD-Mr-za4.title" = "Find Previous";
 
-/* Class = "NSButtonCell"; title = "OK"; ObjectID = "fwT-ix-Uu7"; */
-"fwT-ix-Uu7.title" = "确定";
+/* Class = "NSTextFieldCell"; title = "Shortcut to show/hide QuickCopy"; ObjectID = "gWV-jX-IRo"; */
+"gWV-jX-IRo.title" = "设置快捷键以显示/隐藏拷贝助手";
 
 /* Class = "NSTextFieldCell"; title = "Language Setting:"; ObjectID = "hJT-ap-EsN"; */
 "hJT-ap-EsN.title" = "语言设置:";
@@ -227,6 +236,12 @@
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "jR4-2i-r5D"; */
 "jR4-2i-r5D.title" = "Smart Quotes";
 
+/* Class = "NSTextFieldCell"; title = "placeholder"; ObjectID = "kDk-fU-HUj"; */
+"kDk-fU-HUj.title" = "placeholder";
+
+/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "lVW-RV-jn0"; */
+"lVW-RV-jn0.title" = "Text";
+
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "mDY-Ti-YSK"; */
 "mDY-Ti-YSK.title" = "Check Spelling While Typing";
 
@@ -236,14 +251,14 @@
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "mle-Wt-FAL"; */
 "mle-Wt-FAL.title" = "Redo";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Copy"; ObjectID = "n7o-tC-O3g"; */
-"n7o-tC-O3g.ibShadowedToolTip" = "拷贝";
-
 /* Class = "NSTextFieldCell"; title = "Language setting has been changed. Please relaunch the app to activate the change."; ObjectID = "nJ9-Fo-nPS"; */
 "nJ9-Fo-nPS.title" = "语言设置已经更改，请重启应用以生效。";
 
-/* Class = "NSTableColumn"; headerCell.title = "Text to be copied into Clipboard"; ObjectID = "qd0-bJ-g8w"; */
-"qd0-bJ-g8w.headerCell.title" = "待拷贝的文本";
+/* Class = "NSButtonCell"; title = "Ok"; ObjectID = "nXM-WP-rzS"; */
+"nXM-WP-rzS.title" = "确定";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "oNr-Hm-MvG"; */
+"oNr-Hm-MvG.title" = "退出";
 
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "qtl-mp-j8a"; */
 "qtl-mp-j8a.title" = "Spelling and Grammar";
@@ -251,8 +266,14 @@
 /* Class = "NSMenu"; title = "Find"; ObjectID = "qyx-ab-CNF"; */
 "qyx-ab-CNF.title" = "Find";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Copy"; ObjectID = "u2r-VZ-U4d"; */
+"u2r-VZ-U4d.ibShadowedToolTip" = "拷贝";
+
 /* Class = "NSMenu"; title = "QuickCopy"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "拷贝助手";
+
+/* Class = "NSButton"; ibShadowedToolTip = "More"; ObjectID = "vjr-uv-Dco"; */
+"vjr-uv-Dco.ibShadowedToolTip" = "更多";
 
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "wXS-a2-JvB"; */
 "wXS-a2-JvB.title" = "Substitutions";
@@ -263,17 +284,17 @@
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "帮助";
 
-/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "xWu-0g-qxD"; */
-"xWu-0g-qxD.title" = "文本";
+/* Class = "NSTextFieldCell"; title = "L"; ObjectID = "ySy-hJ-ddb"; */
+"ySy-hJ-ddb.title" = "L";
 
 /* Class = "NSMenu"; title = "Transformations"; ObjectID = "yTN-3a-5GK"; */
 "yTN-3a-5GK.title" = "Transformations";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "ydv-eH-VP5"; */
-"ydv-eH-VP5.title" = "Cut";
+"ydv-eH-VP5.title" = "剪切";
 
 /* Class = "NSMenuItem"; title = "Delete"; ObjectID = "z1k-5p-xZ7"; */
-"z1k-5p-xZ7.title" = "Delete";
+"z1k-5p-xZ7.title" = "删除";
 
 /* Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "zAL-ZW-E89"; */
 "zAL-ZW-E89.title" = "Smart Dashes";

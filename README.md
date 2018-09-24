@@ -18,3 +18,6 @@ This app is available on apple store. And you can also build it by yourself.
 Since the dependencies are managed by Carthage, so before buliding, please make sure you have carthage installed and run the update command:
 
 <code>carthage update</code>
+
+## The app is available in the app store 
+[QuickCopy: Clipboard shortcuts](https://itunes.apple.com/cn/app/quickcopy-clipboard-shortcuts/id1435574509?l=en&mt=12)
