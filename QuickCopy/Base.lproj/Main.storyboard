@@ -672,10 +672,10 @@ DQ
                                         </connections>
                                     </button>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="Mok-SE-l2j">
-                                        <rect key="frame" x="11" y="10" width="23" height="23"/>
+                                        <rect key="frame" x="14" y="13" width="18" height="18"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="23" id="bHt-pn-prw"/>
-                                            <constraint firstAttribute="width" constant="23" id="n4o-8t-Y7m"/>
+                                            <constraint firstAttribute="height" constant="18" id="bHt-pn-prw"/>
+                                            <constraint firstAttribute="width" constant="18" id="n4o-8t-Y7m"/>
                                         </constraints>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="menu" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yod-m9-4Dt">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -687,7 +687,7 @@ DQ
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Mok-SE-l2j" firstAttribute="leading" secondItem="W8U-Z6-Ew3" secondAttribute="leading" constant="11" id="2yP-Ov-2oF"/>
+                                    <constraint firstItem="Mok-SE-l2j" firstAttribute="leading" secondItem="W8U-Z6-Ew3" secondAttribute="leading" constant="14" id="2yP-Ov-2oF"/>
                                     <constraint firstItem="fcx-ty-AMx" firstAttribute="centerY" secondItem="W8U-Z6-Ew3" secondAttribute="centerY" id="FnK-0Y-irn"/>
                                     <constraint firstItem="Mok-SE-l2j" firstAttribute="centerY" secondItem="W8U-Z6-Ew3" secondAttribute="centerY" id="HW4-n6-bRm"/>
                                     <constraint firstAttribute="trailing" secondItem="fcx-ty-AMx" secondAttribute="trailing" constant="11" id="TQu-IW-Xzm"/>
@@ -704,7 +704,7 @@ DQ
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="x57-Kk-fRh"/>
                                 </constraints>
-                                <buttonCell key="cell" type="square" title="SHORTCUTS" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Uav-3E-OWi">
+                                <buttonCell key="cell" type="square" title="QUICK COPY" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Uav-3E-OWi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -717,7 +717,7 @@ DQ
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="N1E-BU-pjf"/>
                                 </constraints>
-                                <buttonCell key="cell" type="square" title="HISTORY" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="PjR-PS-hSf">
+                                <buttonCell key="cell" type="square" title="COPY HISTORY" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="PjR-PS-hSf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -877,14 +877,14 @@ Gw
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSp-G3-H6B">
                                 <rect key="frame" x="20" y="207" width="348" height="52"/>
                                 <clipView key="contentView" id="Xjz-Cr-baX">
-                                    <rect key="frame" x="1" y="1" width="346" height="50"/>
+                                    <rect key="frame" x="1" y="1" width="331" height="50"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="D0q-iW-PhS">
-                                            <rect key="frame" x="0.0" y="0.0" width="346" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="346" height="50"/>
+                                            <size key="minSize" width="331" height="50"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </textView>
@@ -899,21 +899,21 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="awp-i4-lCY">
-                                    <rect key="frame" x="331" y="1" width="16" height="50"/>
+                                    <rect key="frame" x="332" y="1" width="15" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07J-9s-zkS">
                                 <rect key="frame" x="20" y="51" width="348" height="71"/>
                                 <clipView key="contentView" id="V5s-BU-61M">
-                                    <rect key="frame" x="1" y="1" width="346" height="69"/>
+                                    <rect key="frame" x="1" y="1" width="331" height="69"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="MyQ-FP-Fof">
-                                            <rect key="frame" x="0.0" y="0.0" width="346" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="69"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="346" height="69"/>
+                                            <size key="minSize" width="331" height="69"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </textView>
@@ -925,7 +925,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="JUd-4B-jGv">
-                                    <rect key="frame" x="331" y="1" width="16" height="69"/>
+                                    <rect key="frame" x="332" y="1" width="15" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -1139,7 +1139,7 @@ Gw
                                     <nil key="backgroundColor"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.33333333333333331" horizontal="YES" id="Q4Q-Dv-uma">
-                                    <rect key="frame" x="0.0" y="-16" width="0.0" height="16"/>
+                                    <rect key="frame" x="0.0" y="-15" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="EfE-Z7-8iB">
@@ -1254,7 +1254,7 @@ Gw
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Qbz-wD-eJa">
-                                    <rect key="frame" x="0.0" y="-16" width="0.0" height="16"/>
+                                    <rect key="frame" x="0.0" y="-15" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="E6Q-e7-LMQ">
@@ -1292,7 +1292,7 @@ Gw
         <image name="trash" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xt0-YK-gNR"/>
+        <segue reference="1fu-TV-REm"/>
         <segue reference="ig5-Zy-S9z"/>
     </inferredMetricsTieBreakers>
 </document>

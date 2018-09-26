@@ -143,7 +143,7 @@
 /* Class = "NSViewController"; title = "About"; ObjectID = "PiY-X1-TkF"; */
 "PiY-X1-TkF.title" = "关于";
 
-/* Class = "NSButtonCell"; title = "HISTORY"; ObjectID = "PjR-PS-hSf"; */
+/* Class = "NSButtonCell"; title = "COPY HISTORY"; ObjectID = "PjR-PS-hSf"; */
 "PjR-PS-hSf.title" = "拷贝历史";
 
 /* Class = "NSMenuItem"; title = "Make Lower Case"; ObjectID = "QDd-RE-rg5"; */
@@ -164,8 +164,8 @@
 /* Class = "NSTextFieldCell"; title = "version: "; ObjectID = "U65-4E-CZU"; */
 "U65-4E-CZU.title" = "版本: ";
 
-/* Class = "NSButtonCell"; title = "SHORTCUTS"; ObjectID = "Uav-3E-OWi"; */
-"Uav-3E-OWi.title" = "快捷键";
+/* Class = "NSButtonCell"; title = "QUICK COPY"; ObjectID = "Uav-3E-OWi"; */
+"Uav-3E-OWi.title" = "快捷拷贝";
 
 /* Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "V1u-oT-eUf"; */
 "V1u-oT-eUf.title" = "Jump to Selection";
