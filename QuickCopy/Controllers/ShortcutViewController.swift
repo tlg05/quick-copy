@@ -31,11 +31,11 @@ class ShortcutViewController: NSViewController {
     }
     
     @IBAction func onEdit(_ sender: NSButton) {
-        performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "editSegue"), sender: sender)
+        performSegue(withIdentifier: "editSegue", sender: sender)
     }
     
     @IBAction func onDelete(_ sender: NSButton) {
-        self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "deleteMessageSegue"), sender: sender)
+        self.performSegue(withIdentifier: "deleteMessageSegue", sender: sender)
     }
     
     @IBAction func onHideText(_ sender: NSButton) {
@@ -54,11 +54,11 @@ class ShortcutViewController: NSViewController {
         TextUtil.copy(text: HKManager.shared.shortcuts[rowIdx].text)
         
         EventManager.shared.trigger(name: "app.text_copied", param: nil)
-        performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "copyMessageSegue"), sender: self)
+        performSegue(withIdentifier: "copyMessageSegue", sender: self)
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        if segue.identifier == NSStoryboardSegue.Identifier(rawValue: "editSegue") {
+        if segue.identifier == "editSegue" {
             EventManager.shared.trigger(name: "app.editing", param: nil)
             
             let editButton = sender as! NSButton
@@ -66,11 +66,11 @@ class ShortcutViewController: NSViewController {
                 let rowIdx = tableView.row(for: editButton)
                 editVC.data = HKManager.shared.shortcuts[rowIdx]
             }
-        } else if segue.identifier == NSStoryboardSegue.Identifier(rawValue: "copyMessageSegue") {
+        } else if segue.identifier == "copyMessageSegue" {
             if let messageVC = segue.destinationController as? MessageViewController {
                 messageVC.message = NSLocalizedString("Text copied!", comment: "") as NSString
             }
-        } else if segue.identifier == NSStoryboardSegue.Identifier(rawValue: "deleteMessageSegue") {
+        } else if segue.identifier == "deleteMessageSegue" {
             if let messageVC = segue.destinationController as? MessageViewController {
                 let deleteButton = sender as? NSButton
                 let rowIdx = self.tableView.row(for: deleteButton!)

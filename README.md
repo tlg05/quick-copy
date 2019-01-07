@@ -1,4 +1,6 @@
 # QuickCopy: Clipboard shortcuts
+![alt text](https://img.shields.io/badge/build-success-green.svg "bulid:success")        ![alt text](https://img.shields.io/badge/Swift-4.0-blue.svg "Swift:4.0")
+
 This is a macos app which can conveniently copy commonly used text via global hotkeys or touch bar operation.
 
 

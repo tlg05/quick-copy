@@ -41,11 +41,11 @@ class ViewController: NSViewController {
     }
     
     @objc func onPreferences() {
-        self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "preferenceSegue"), sender: self)
+        self.performSegue(withIdentifier: "preferenceSegue", sender: self)
     }
     
     @objc func onAbout() {
-        self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "aboutSegue"), sender: self)
+        self.performSegue(withIdentifier: "aboutSegue", sender: self)
     }
     
     @objc func onQuit() {

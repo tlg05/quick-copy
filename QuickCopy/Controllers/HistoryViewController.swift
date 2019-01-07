@@ -31,19 +31,30 @@ class HistoryViewController: NSViewController {
         TextUtil.copy(text: HistoryItemManager.shared.items[rowIdx].string!)
         
         EventManager.shared.trigger(name: "app.text_copied", param: nil)
-        performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "historyCopyMessageSegue"), sender: self)
+        performSegue(withIdentifier: "historyCopyMessageSegue", sender: self)
     }
     
     @IBAction func onAdd(_ sender: NSButton) {
-        self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "addHistorySegue"), sender: sender)
+        self.performSegue(withIdentifier: "addHistorySegue", sender: sender)
+    }
+    
+    @IBAction func onDelete(_ sender: NSButton) {
+        let rowIdx = tableView.row(for: sender)
+        HistoryItemManager.shared.items[rowIdx].delete()
+        self.reloadData()
+        self.performSegue(withIdentifier: "historyDeleteMessageSegue", sender: sender)
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        if segue.identifier == NSStoryboardSegue.Identifier(rawValue: "historyCopyMessageSegue") {
+        if segue.identifier == "historyCopyMessageSegue" {
             if let messageVC = segue.destinationController as? MessageViewController {
                 messageVC.message = NSLocalizedString("Text copied!", comment: "") as NSString
             }
-        } else if segue.identifier == NSStoryboardSegue.Identifier(rawValue: "addHistorySegue") {
+        } else if segue.identifier == "historyDeleteMessageSegue" {
+            if let messageVC = segue.destinationController as? MessageViewController {
+                messageVC.message = NSLocalizedString("Text deleted!", comment: "") as NSString
+            }
+        } else if segue.identifier == "addHistorySegue" {
             let addButton = sender as! NSButton
             if let editVC = segue.destinationController as? AddHotKeyViewController {
                 let rowIdx = tableView.row(for: addButton)

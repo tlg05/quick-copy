@@ -103,6 +103,22 @@ class HistoryItem: Model {
         }
     }
     
+    public func delete() {
+        guard self.id != nil else {
+            return
+        }
+        
+        let db = HistoryItem.openDB()
+        let row = Table(HistoryItem.table_name).filter(HistoryItem.id_col == self.id!)
+        do {
+            if try db.run(row.delete()) <= 0 {
+                print("Failed in updating visible field")
+            }
+        } catch {
+            print("update failed: \(error)")
+        }
+    }
+    
     private func removeOldItems() {
         let db = HistoryItem.openDB()
         do {
